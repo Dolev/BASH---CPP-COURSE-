@@ -1,0 +1,11 @@
+'Awk'- 1:
+awk '{if($4 =="") print("Not all scores are available for"), $1}'
+
+'Awk'- 2:
+awk '{if ($1>=50 && $2>=50 && $3>=50){print $1,": Pass"}else {print $1,": Fail"}}'
+
+'Awk'- 3:
+awk '{s=($2+$3+$4)/3;print $0" : "(s>=80?"A":(s>=60?"B":(s>=50?"C":"FAIL")))}'  
+
+'Awk'- 4:
+awk 'NR%2{printf$0";"}1-NR%2'         // Where $0 means line and NR is the current line
