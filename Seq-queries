@@ -1,0 +1,18 @@
+
+Grep -1:
+grep -w the / grep "/bthe/b"       //(/b) means epsilon - null char       w- word
+
+Grep -2:
+grep -i 'the' / grep -wi the       // w- word, i-case insensitive
+
+Grep -3:
+grep -vi that                     // v-verse (the rest)     
+
+Sed -1:
+sed -e '/the /s/the/this/'             // switch the -> this
+
+Sed -2:
+sed -e 's/thy/your/ig'                // switch thy -> your (case insensitive)     g- global
+
+Sed -3:
+sed -e 's/thy/{&}/ig'                 // switch thy -> {thy} (case insensitive) 
